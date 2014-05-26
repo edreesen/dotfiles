@@ -15,3 +15,6 @@ export LC_CTYPE=$LANG
 ## editor
 export EDITOR=~/bin/vim
 export VISUAL=~/bin/vim
+
+# 10ms for key sequences
+KEYTIMEOUT=1
