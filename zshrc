@@ -9,3 +9,5 @@ compinit -i
 
 #alias vim="stty stop '' -ixoff; vim"
 precmd() { print "" }
+
+[[ "$TERM" == "xterm" ]] && export TERM=xterm-256color
