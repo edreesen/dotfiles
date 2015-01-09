@@ -29,12 +29,12 @@ for file in $files; do
     if [[ -f ~/.$file ]];
         then
             echo "File ~/.$file exists. Moving to $olddir."
-            mv ~/.$file $olddir
+            mv ~/."$file" "$olddir"
         else
             echo "File ~/.$file did not yet exist. No need to create backup."
         fi
     echo "Creating symlink to $file in home directory."
-    ln -s $dir/$file ~/.$file
+    ln -s "$dir"/"$file" ~/."$file"
 done
 
 for folder in $folders; do
@@ -47,10 +47,9 @@ for folder in $folders; do
     if [[ -d ~/.$folder ]];
         then
             echo "Folder ~/.$folder exists. Moving to $olddir."
-            mv ~/.$folder $olddir
+            mv ~/."$folder" "$olddir"
     fi
 
     echo "Creating symlink to folder $folder in home directory."
-    ln -s $dir/$folder ~/.$folder
+    ln -s "$dir"/"$folder" ~/."$folder"
 done
-
