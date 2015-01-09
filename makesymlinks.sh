@@ -41,7 +41,7 @@ for folder in $folders; do
     if [[ -L ~/.$folder ]];
         then
             echo "Symlink named ~/.$folder exists. Removing."
-            rm -f ~/.$folder
+            rm -f ~/."$folder"
     fi
 
     if [[ -d ~/.$folder ]];
