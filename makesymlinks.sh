@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 ############################
-# .make.sh
+# makesymlinks.sh
 # This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
 ############################
 
