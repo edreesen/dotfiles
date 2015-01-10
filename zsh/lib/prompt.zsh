@@ -11,7 +11,7 @@ promptinit
 
 precmd () { vcs_info }
 PROMPT='[%D{%K:%M:%S} - %{$fg[magenta]%}%n%{$reset_color%} at %{$fg[yellow]%}%m%{$reset_color%} in %{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}$(git_super_status)]
-$:'
+$: '
 
 TRAPALRM() {
     zle reset-prompt
