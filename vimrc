@@ -12,14 +12,6 @@ autocmd! bufwritepost .vimrc source %
 " fix ESC delay from http://www.johnhawthorn.com/2012/09/vi-escape-delays/
 set timeoutlen=1000 ttimeoutlen=0
 
-
-" Bind nohl
-" Removes highlight of your last search
-" ``<C>`` stands for ``CTRL`` and therefore ``<C-n>`` stands for ``CTRL+n``
-noremap <C-n> :nohl<CR>
-vnoremap <C-n> :nohl<CR>
-inoremap <C-n> :nohl<CR>
-
 " Strip trailing whitespaces on each save
 fun! <SID>StripTrailingWhitespaces()
     let l = line(".")
