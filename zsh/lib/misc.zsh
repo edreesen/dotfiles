@@ -13,8 +13,8 @@ export PAGER=less
 export LC_CTYPE=$LANG
 
 ## editor
-export EDITOR=~/bin/vim
-export VISUAL=~/bin/vim
+export EDITOR=/usr/bin/vim
+export VISUAL=/usr/bin/vim
 
 # 10ms for key sequences
 KEYTIMEOUT=1
