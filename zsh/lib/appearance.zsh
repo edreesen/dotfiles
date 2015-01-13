@@ -24,3 +24,11 @@ fi
 
 # Apply theming defaults
 PS1="%n@%m:%~%# "
+
+# Set user@FQDN:PWD in title (e.g. PuTTY)
+case $TERM in
+    xterm*)
+        precmd () {print -Pn "\e]0;%n@%M: %~\a"}
+        ;;
+esac
+
