@@ -11,6 +11,24 @@ autoload -U compinit
 compinit -i
 
 #alias vim="stty stop '' -ixoff; vim"
-precmd() { print "" }
 
 export TERM='xterm-256color'
+
+function title() {
+  # escape '%' chars in $1, make nonprintables visible
+  a=${(V)1//\%/\%\%}
+
+  # Truncate command, and join lines.
+  a=$(print -Pn "%40>...>$a" | tr -d "\n")
+
+  case $TERM in
+  screen)
+    print -Pn "\e]2;$a @ $2\a" # plain xterm title
+    print -Pn "\ek$a\e\\"      # screen title (in ^A")
+    print -Pn "\e_$2   \e\\"   # screen location
+    ;;
+  xterm*|rxvt)
+    print -Pn "\e]2;$a @ $2\a" # plain xterm title
+    ;;
+  esac
+}
