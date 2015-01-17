@@ -9,14 +9,8 @@ bindkey "^[[5~" up-line-or-history
 bindkey "^[[6~" down-line-or-history
 
 # make search up and down work, so partially type and hit up/down to find relevant stuff
-#bindkey '^[[A' up-line-or-search
-#bindkey '^[[B' down-line-or-search
-autoload -U up-line-or-beginning-search
-autoload -U down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-bindkey "^[[A" up-line-or-beginning-search # Up
-bindkey "^[[B" down-line-or-beginning-search # Down
+bindkey '^[[A' up-line-or-search
+bindkey '^[[B' down-line-or-search
 
 bindkey "^[[H" beginning-of-line
 bindkey "^[[1~" beginning-of-line

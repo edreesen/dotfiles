@@ -10,7 +10,11 @@ for config_file ($ZSH/lib/*.zsh) source $config_file
 autoload -U compinit
 compinit -i
 
+# this is a fix for vi in OS X
 #alias vim="stty stop '' -ixoff; vim"
+
+# this adds an extra line break before every new prompt
+precmd() { print "" }
 
 export TERM='xterm-256color'
 
