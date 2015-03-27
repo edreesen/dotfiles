@@ -53,3 +53,5 @@ for folder in $folders; do
     echo "Creating symlink to folder $folder in home directory."
     ln -s "$dir"/"$folder" ~/."$folder"
 done
+
+echo -e "\e[33mPlease run the following to enable zsh as default shell: \e[32mchsh -s `which zsh`\e[0m"
