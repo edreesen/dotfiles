@@ -23,3 +23,6 @@ if test "$TERM" != linux; then
  precmd() { print -Pn "\e]2;$0 (%~) %n@%m\a" 2>/dev/null }
  preexec() { print -Pn "\e]2;$1 (%~) %n@%m\a" 2>/dev/null }
 fi
+
+# avoid most common annoying correction:
+alias sudo='nocorrect sudo'
