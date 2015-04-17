@@ -58,6 +58,9 @@ nnoremap <F4> :NumbersOnOff<CR>
 set history=700
 set undolevels=700
 
+" limit git commit messages to 72 char per line
+autocmd Filetype gitcommit setlocal spell textwidth=72
+
 " Real programmers don't use TABs but spaces
 set tabstop=4
 set softtabstop=4
