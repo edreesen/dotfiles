@@ -1,0 +1,12 @@
+[user]
+	name = Robert Habermann
+	email = mail@rhab.de
+[push]
+	default = matching
+[mergetool "vimdiff"]
+	keepBackup = false
+[mergetool]
+	keepBackup = false
+[merge]
+	conflictstyle = diff3
+	tool = vimdiff
