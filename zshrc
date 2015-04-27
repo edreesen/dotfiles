@@ -16,9 +16,6 @@ compinit -i
 # this adds an extra line break before every new prompt
 precmd() { print "" }
 
-# set default editor to vim
-export EDITOR="vim"
-
 export TERM='xterm-256color'
 
 if test "$TERM" != linux; then
