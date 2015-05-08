@@ -54,4 +54,7 @@ for folder in $folders; do
     ln -s "$dir"/"$folder" ~/."$folder"
 done
 
+# make sure ~/.ssh exists
+mkdir ~/.ssh
+
 echo -e "\e[33mPlease run the following to enable zsh as default shell: \e[32mchsh -s `which zsh`\e[0m"
