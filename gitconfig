@@ -16,6 +16,7 @@
 	ci = commit
 	st = status
 	unstage = reset HEAD --
+	undo = reset --hard
 	last = log -1 HEAD
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	hist22 = log -22 --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
