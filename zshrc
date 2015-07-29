@@ -16,7 +16,8 @@ compinit -i
 # this adds an extra line break before every new prompt
 precmd() { print "" }
 
-export TERM='xterm-256color'
+#export TERM='xterm-256color'
+export TERM='screen-256color'
 
 if test "$TERM" != linux; then
  # show current command, directory, and user in terminal title
