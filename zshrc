@@ -25,5 +25,10 @@ if test "$TERM" != linux; then
  preexec() { print -Pn "\e]2;$1 (%~) %n@%m\a" 2>/dev/null }
 fi
 
+# generate random passwd (32 chars)
+genpasswd() {
+    openssl rand -base64 32
+}
+
 # avoid most common annoying correction:
 alias sudo='nocorrect sudo'
