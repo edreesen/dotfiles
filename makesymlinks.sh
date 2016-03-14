@@ -58,4 +58,6 @@ done
 mkdir ~/.ssh
 
 #echo -e "\e[33mPlease run the following to enable zsh as default shell: \e[32mchsh -s `which zsh`\e[0m"
-echo -e "\e[33mPlease add a tmux alias to your bash. \nE.g. by running: \e[32mecho \"alias tmux='TERM=xterm-256color tmux'\" >> ~/.bashrc\e[0m"
+
+echo -e "\e[33mIf you use Putty remember to set Terminal -> Keyboard -> Function Keys: \e[31mXterm R6\e[0m"
+echo -e "\e[33mPlease add a tmux alias to your bash, e.g. by running:\n\e[32mecho \"alias tmux='TERM=xterm-256color tmux'\" >> ~/.bashrc\e[0m"
