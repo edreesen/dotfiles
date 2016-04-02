@@ -62,7 +62,12 @@ else
     ln -s "$dir"/"$fabric_dir" ~/"$fabric_dir"
 fi
 # make sure ~/.ssh exists
-mkdir ~/.ssh
+if [[ -d ~/.ssh ]];
+then
+    echo "~/.ssh exists."
+else
+    mkdir ~/.ssh
+fi
 
 #echo -e "\e[33mPlease run the following to enable zsh as default shell: \e[32mchsh -s `which zsh`\e[0m"
 
