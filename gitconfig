@@ -3,6 +3,7 @@
 	email = mail@rhab.de
 [push]
 	default = matching
+	followTags = true
 [mergetool "vimdiff"]
 	keepBackup = false
 [mergetool]
