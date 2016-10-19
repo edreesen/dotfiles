@@ -31,3 +31,6 @@ genpasswd() {
 
 # avoid most common annoying correction:
 alias sudo='nocorrect sudo'
+
+export PATH="$PATH:$HOME/local/bin/" # add tmux dir
+alias tmux='TERM=xterm-256color /home/robbie/local/bin/tmux'
