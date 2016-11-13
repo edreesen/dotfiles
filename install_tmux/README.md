@@ -9,8 +9,6 @@ export http_proxy
 export https_proxy
 export ftp_proxy
 
-git clone https://github.com/frennkie/install_tmux
-
 sudo apt-get install autoconf m4 libtool pkg-config
 
 
