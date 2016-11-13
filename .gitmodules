@@ -1,0 +1,3 @@
+[submodule "install_tmux"]
+	path = install_tmux
+	url = git@github.com:frennkie/install_tmux.git
