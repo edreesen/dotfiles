@@ -16,7 +16,7 @@ from fabric.api import *
 # call with e.g. "fab -R prod df" for "prod" role host
 env.roledefs = {
     'self': ['localhost'],
-    'prod': ['dom0', 'dom1', 'dom5', 'dom1v2', 'gitlab'],
+    'prod': ['dom0', 'dom1', 'dom5', 'dom1v2'],
     'dev': ['user@dev.example.com'],
     'staging': ['user@staging.example.com'],
     'production': ['user@production.example.com']
