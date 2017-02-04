@@ -9,7 +9,7 @@ export http_proxy
 export https_proxy
 export ftp_proxy
 
-sudo apt-get install autoconf m4 libtool pkg-config
+sudo apt-get install make autoconf m4 libtool pkg-config
 
 
 One-line install:
