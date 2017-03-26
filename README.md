@@ -1,4 +1,4 @@
 dotfiles
 ========
 
-my (frennkie) personal dotfiles
+my personal dotfiles
